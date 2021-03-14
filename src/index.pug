@@ -1,0 +1,193 @@
+include ./title
+
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title Document
+body 
+  .container
+    .content
+      .introduction
+        .introduction__logo
+        p <span>Компания «Айскул Групп» </span>выполняет профессиональный монтаж, демонтаж и ввод в эксплуатацию холодильных камер любого исполнения и размера. Мы сотрудничаем с ведущими производителями оборудования, гарантируем высокое качество и быстрое выполнение работ. Предоставляем свои услуги на территории Москвы, Московской области и Центрального федерального округа.
+      
+      .services
+        +title('Услуги монтажа и демонтажа холодильных камер')
+        .services-items 
+          .services-item
+            .services-item__bg
+              .services-item__icon
+            .services-item__content 
+              .services-item__title Монтаж
+              p.services-item__text Все работы ведутся согласно разработанным типовым технологическим решениям. При выполнении монтажа мы используем качественный герметик и обеспечиваем плотную подгонку блоков, что в конечном итоге повышает герметичность камеры.
+              .services-item__list-title Процесс монтажа включает следующие работы:
+              .services-item__list-items
+                li <span>сборка панелей</span>
+                li <span>установка холодильного агрегата;</span>
+                li <span>прокладка электрокабелей и трубопроводных систем;</span>
+                li <span>проверка герметичности всех соединений;</span>
+                li <span>заправка системы хладагентом (выполняется согласно паспорту оборудования);</span>
+                li <span>проведение пуско-наладочных работ.</span>
+              
+          .services-item
+            .services-item__bg
+              .services-item__icon2
+                .services-item__icon_little
+            .services-item__content 
+              .services-item__title Демонтаж
+              p.services-item__text Выполняется квалифицированными специалистами, <br>что позволяет минимизировать общее время работ и обеспечить полную сохранность всех компонентов холодильных камер. Мы работаем исключительно с профессиональным оборудованием и по заранее разработанному регламенту.
+              .services-item__list-title Процесс демонтажа состоит из следующих этапов:
+              .services-item__list-items
+                li <span>отключение всех электрических систем;</span>
+                li <span>удаление хладагентов из системы;</span>
+                li <span>разгерметизация и демонтаж трубопровода;</span>
+                li <span>демонтаж электрокабелей;</span>
+                li <span>разборка охладительного оборудования;</span>
+                li <span>разборка стен и каркаса камеры;</span>
+
+      .request-section 
+        .request-section__content
+          .title 
+            h1 Узнайте стоимость монтажа и демонтажа холодильных камер
+          p Просто напишите нам. Мы перезвоним и оперативно все рассчитаем.
+          .request-section__buttons
+            .button Отправить заявку
+            div(class="button button_transparent") Заказать звонок
+          .request-section__image
+          .request-section__figure1
+
+      .prices 
+        +title('Цены на монтаж холодильных камер')
+        .prices-content 
+          div(class="prices-block prices-block-first")
+            .prices-block-content
+              .prices-block-image-bg 
+                .prices-block-image
+              .prices-block-name Камеры малого размера
+              p Прямоугольная форма
+              .prices-block-price-section
+                .prices-block-price от 8 000 руб.
+                .prices-block-size от 160 см до 180 см
+              .prices-block-order
+                .button Заказать монтаж
+          div(class="prices-block prices-block-middle prices-block-middle1")
+            .prices-block-content
+              .prices-block-image-bg 
+                .prices-block-image
+              .prices-block-name Камеры среднего размера
+              p Прямоугольная форма
+              .prices-block-price-section
+                .prices-block-price от 13 000 руб.
+                .prices-block-size от 180 см до 200 см
+              .prices-block-order
+                .button Заказать монтаж
+          div(class="prices-block prices-block-middle prices-block-middle2")
+            .prices-block-content
+              .prices-block-image-bg 
+                .prices-block-image
+              .prices-block-name Камеры большого размера
+              p Прямоугольная форма
+              .prices-block-price-section
+                .prices-block-price от 450 руб./м
+                .prices-block-size от 200 см до 350 см
+              .prices-block-order
+                .button Заказать монтаж
+          div(class="prices-block prices-block-last")
+            .prices-block-content
+              .prices-block-image-bg 
+                .prices-block-image
+              .prices-block-name Нестандартные камеры
+              p Индивидуальная форма
+              .prices-block-price-section
+                .prices-block-price от 500 руб./м
+                .prices-block-size от 160 см до 180 см
+              .prices-block-order
+                .button Заказать монтаж
+
+      .showcase
+        +title('Почему нас выбирают')
+        .showcase-numbers 
+          div(class="showcase-numbers-block showcase-block1")
+            p более
+            .showcase-number 3000
+            p смонтированных камер
+          div(class="showcase-numbers-block showcase-block2")
+            p более
+            .showcase-number 2500
+            p довольных клиентов
+          div(class="showcase-numbers-block showcase-block3")
+            p Монтаж за
+            .showcase-number 1
+            p день
+        .showcase-pros 
+          div(class="showcase-pros-block showcase-pros-block1")
+            .showcase-pros-block-bg 
+              .showcase-pros-block-image
+            p Монтаж в день <br>оплаты
+          div(class="showcase-pros-block showcase-pros-block2")
+            .showcase-pros-block-bg 
+              .showcase-pros-block-image
+            p Камеры<br> любой сложности <br>и размера
+          div(class="showcase-pros-block showcase-pros-block3")
+            .showcase-pros-block-bg 
+              .showcase-pros-block-image
+            p Установка в<br> удобное для вас <br>время
+          div(class="showcase-pros-block showcase-pros-block4")
+            .showcase-pros-block-bg 
+              .showcase-pros-block-image
+            p Услуга переезда<br> под ключ
+      
+      .reviews
+        +title('Отзывы')
+        .reviews-content 
+          .reviews-slider-button
+          .reviews-block-section 
+            div(class="reviews-block reviews-block1")
+              .reviews-block-image
+              .reviews-block-name Мересьев Игорь Иванович
+              p Партнерам своей компании я уже не раз рекомендовал компанию ГК «Айскул Групп». Потому что качество продукции достойное, сервис отличный, есть обслуживание, работа по договору, гарантии и т.д. Что касается... 
+            div(class="reviews-block reviews-block2")
+              .reviews-block-image
+              .reviews-block-name Олег Тищенко
+              p Хотел бы выразить благодарность за обслуживание холодильных камер. Установили на объекте в начале года. Наладка прошла успешно, но со временем возникли проблемы с эксплуатацией со стороны нашего предприятия. Хорошо, что есть на кого...
+            div(class="reviews-block reviews-block3")
+              .reviews-block-image
+              .reviews-block-name ООО РуСтойГарант
+              p Доброго дня. Для оснащения своей фабрики-кухни мы заказывали распашные двери холодильные. Отметим, что это двери европейского уровня. РДО предназначены для использования в средне- и низкотемпературных камерах. Конечно с подбором...
+          .reviews-slider-button
+
+      .clients
+        +title('Наши клиенты')
+        .clients-content 
+          .clients-slider-button
+          .clients-block-section 
+            .clients-block-bg
+              .clients-client-image1 
+            .clients-block-bg
+              .clients-client-image2
+            .clients-block-bg
+              .clients-client-image3 
+            .clients-block-bg
+              .clients-client-image4
+            .clients-block-bg
+              .clients-client-image5 
+          .clients-slider-button
+          
+        
+
+      
+
+
+
+
+
+                
+
+
+
+
+
+            
